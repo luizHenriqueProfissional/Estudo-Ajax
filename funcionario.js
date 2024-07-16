@@ -40,10 +40,10 @@ function Funcionario(nome, cargo, salario){
 function Estagiario(nome){
     Funcionario.call(this, nome, "Estagiario", 2000)
 
-    this.aumento = function(){
-        const novoSalario = this.getSalario * 1.07
-        this.setSalario = novoSalario;
-    }
+    this.aumento() = function() {
+        const novoSalario =  this.getSalario * 1.07
+        this.setSalario( novoSalario ) 
+     }
 }
 
 
@@ -53,6 +53,7 @@ const pessoa = new Pessoa("luiz")
 // const funcionario2 = new Funcionario("Luiz", "estagiario","2000")
 // funcionario1.dizOi();
 // funcionario1.dizCargo();
+
 const funcionario2 = new Estagiario("Pedro")
 
 
